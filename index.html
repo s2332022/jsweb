@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>シンプル計算ページ</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main>
+      <h1>シンプル計算ページ</h1>
+
+      <label for="input">値（数値はカンマ区切り、文字列はそのまま）</label>
+      <input id="input" type="text" placeholder="例: 1,2,3  または こんにちは 世界" />
+
+      <div class="controls">
+        <label for="mode">モード</label>
+        <select id="mode">
+          <option value="number">数値</option>
+          <option value="string">文字列</option>
+        </select>
+
+        <label for="operation">操作</label>
+        <select id="operation">
+          <!-- オプションは script.js が初期化 -->
+        </select>
+      </div>
+
+      <button id="run">実行</button>
+
+      <section id="result">
+        <h2>結果</h2>
+        <pre id="output">--</pre>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
